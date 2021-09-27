@@ -1,0 +1,845 @@
+@font-face {
+    font-family: "product-sans";
+    src: url(../assets/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+}
+
+.icons {
+    fill: #808080;
+}
+
+
+/* Side Bar Navigation*/
+   
+aside {
+    grid-column: 1 / 2;
+    display: grid;
+    grid: auto-flow min-content / repeat(1, 1fr);
+    position: fixed;
+    z-index: 15;
+    height: 100%;
+    width: 12.5%;
+    overflow: auto;
+    background: #ffff;
+}
+
+.nav {
+    width: 94.3%;
+    padding: 1.23em 0em;
+}
+
+.nav p {
+    font-size: 1.3rem;
+    color: gray;
+}
+
+    /* Top of Navigation with logo and hamburger button */
+
+.heading {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 0 0.55em 1.5em;
+    font-family: "product-sans", sans-serif;
+    position: relative;
+    width: 90%;
+}
+
+.nav-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+}
+
+.hbg-button {
+    fill: gray;
+    padding: 0.3em 0.5em 0.2em 0.5em;
+    cursor: pointer;
+}
+
+.hbg-button svg {
+    fill: gray;
+}
+    /*end*/
+
+    /*Navigation Menu*/
+#compose-button {
+    text-decoration: none;
+}
+
+
+.compose-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #ffff;
+    margin: 1em 0.4em;
+    padding: 1em 1.7em;
+    border-radius: 30px;
+    border: 1px solid rgba(141, 137, 137, 0.11);
+    box-shadow: 0px 2px 2px rgba(141, 137, 137, 0.48);
+}
+
+.compose-button img {
+    padding-right: 1em;
+}
+
+.compose-button p {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(58 58 58);
+    font-family: "product-sans", sans-serif;
+}
+
+.nav-menu h4 {
+    padding: 1em 1.5em 0.3em 1.5em;
+    font-weight: 300;
+    font-family: "product-sans", sans-serif;
+}
+
+/* .nav-menu {
+    padding: 0 1.5em;
+} */
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu li {
+    width: 97%;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 0.4em;
+    font-size: 0.83rem;
+}
+
+.nav-items-num {
+    font-family: "Roboto", sans-serif !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.2em 0 0.2em 1.5em;
+    width: 95%;
+    cursor: pointer;
+}
+
+.nav-items-num p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 0.8em;
+    opacity: 0;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items svg {
+    margin-right: 0.5em;
+    padding-right: 0.1em;
+}
+
+.nav-items img {
+    width: 29px;
+    height: 29px;
+    border-radius: 30px;
+}
+
+#hangouts {
+    width: 90%;
+}
+
+#hangouts p {
+    opacity: 1;
+    color: #000;
+    margin-left: 0.4em;
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.top-nav-section {
+    border-bottom: 2px solid rgba(214, 214, 214, 0.452) ;
+}
+
+.middle-nav-section {
+    border-bottom: 1px solid rgba(214, 214, 214, 0.452) ;
+}
+    /*end*/
+
+/*end*/
+
+
+/*main*/
+   
+main {
+    grid-column: 2 / -1;
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+    margin-left: 4.8%;
+    font-family: "product-sans", sans-serif;
+}
+
+    /*Main Header*/
+.main-header {
+    width: 86%;
+    margin-bottom: 0.3em;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0.5em 0;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background: #ffff;
+}
+    /*Search Bar*/
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    width: 46%;
+    padding: 0.31em 0.5em;
+    border-radius: 7px;
+}
+
+.search-bar input {
+    width: 92%;
+    font-size: 1.1em;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "product-sans", sans-serif;
+}
+
+.searchbar-buttons {
+    padding: 0.3em 0.5em 0.2em 0.5em;
+    cursor: pointer;
+}
+
+.searchbar-icons {
+    fill: #666666;
+}
+    /*end*/
+
+    /*header-right*/
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 8em;
+}
+
+.header-right-buttons {
+    padding: 0.3em 0.5em 0.2em 0.5em;
+    cursor: pointer;
+}
+
+.header-right-icons {
+    fill: #666666;
+}
+    /*second header (the header below the main header)*/
+.main-sub-header {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.62em 0 0.62em 1.3em;
+    position: fixed;
+    z-index: 5;
+    top: 64.45px;
+    background: white;
+    width: 83.7%;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.main-sub-header svg {
+    fill: #666666;
+    cursor: pointer;
+}
+
+.dropdown-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.subheader-left {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subheader-right {
+    width: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.subheader-right p {
+    color: #666666;
+    font-size: 0.75rem;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+    /*mail section*/
+.mail-section {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    padding-left: 1.3em;
+    width: 96%;
+    position: relative;
+    top: 110px;
+    z-index: 1;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4em 0;
+    border-bottom: 1px solid #ebebeb;
+    padding-right: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 25;
+}
+
+#hyphen {
+    padding: 0 0.3em;
+}
+
+.mail-title-n-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mail-icons svg {
+    margin-right: 0.5em;
+    fill: #bbbbbb;
+}
+
+.container {
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0.4em 0.6em 0.4em 0.25em;
+}
+
+.container input {
+    cursor: pointer;
+    height: 14.6px;
+    width: 14.6px;
+}
+
+.mail-body {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mail-body h5 {
+    padding-right: 0.6em;
+}
+
+.mail-body p {
+    color: #757575;
+}
+
+.hover-icons {
+    position: absolute;
+    right: 1px;
+    opacity: 0;
+    width: 11%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0.7em;
+}
+
+.hover-icon-buttons {
+    padding: 0.3em 0.5em;
+    cursor: pointer;
+    z-index: 17;
+}
+
+.hover-icons svg {
+    fill:#666666 !important;
+}
+
+.date {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.right-sidenav {
+    grid-row: 4 / -1;
+    display: grid;
+    grid: auto-flow min-content / repeat(1, 1fr);
+    position: fixed;
+    top: 80px;
+    left: 97.7%;
+    height: 100%;
+    overflow: auto;
+    width: 20px;
+}
+
+.right-sidenav ul {
+    list-style: none;
+}
+
+.right-sidenav li {
+    padding-bottom: 1.5em;
+}
+
+/*end*/
+
+/*active state*/
+
+/*nav*/
+
+    /*nav header*/
+.hbg-button:hover {
+    background-color: #8d89897a;
+    border-radius: 40px;
+}
+
+    /*compose button*/
+.compose-button:hover {
+    background-color: #dddddd;
+}
+
+    /*nav menu*/
+.nav-menu li:hover {
+   background-color: #dddddd;
+   border-radius: 0 15px 15px 0;
+}
+    
+.nav-menu li:hover p {
+   opacity: 100%;
+}
+        /*active nav*/
+.active-nav {
+    background-color: #ca00002d;
+    border-radius: 0 15px 15px 0;
+}
+
+.active-nav svg {
+    fill: #ca0000;
+}
+
+.active-nav a {
+    font-weight: bold;
+    color: #ca0000;
+}
+
+.active-nav p {
+    opacity: 100%;
+    color: #ca0000;
+}
+
+.active-nav:hover {
+    background-color: #ca00002d !important;
+    border-radius: 0 15px 15px 0;
+}
+
+.active-nav:hover svg {
+    fill: #ca0000;
+}
+
+.active-nav:hover a {
+    font-weight: bold;
+    color: #ca0000;
+}
+
+.active-nav:hover p {
+    opacity: 100%;
+    color: #ca0000;
+}
+
+/*end*/
+
+/*main*/
+
+    /*header*/
+.searchbar-buttons:hover,
+.header-right-buttons:hover,
+.main-sub-header svg:hover {
+    background-color: #dddddd;
+    border-radius: 40px;
+} 
+
+.subheader-right p:hover {
+    background-color: #dddddd;
+}
+
+    /*mail section*/
+.mail:hover {
+   border-top: 1px solid #f5f5f5;
+   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+
+.mail:hover svg {
+    fill: #000000;
+}
+
+.mail:hover > .hover-icons {
+    opacity: 1;
+}
+
+.hover-icon-buttons:hover {
+    background-color: #dddddd;
+    border-radius: 40px;
+}
+
+.mail:hover > .date {
+    opacity: 0;
+    z-index: 3;
+}
+    /*style for when an email has been opened*/
+#open {
+    background-color: #f5f5f5;
+    z-index: 20;
+}
+
+#open h5,
+#open > .date {
+    font-weight: 100;
+}
+
+#open > .date {
+    color: #9e9e9e;
+}
+
+#open:hover {
+    border-top: 1px solid #f5f5f5;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+ }
+
+ @media screen and (max-width: 1309px) {
+    * {
+        font-size: 12px;
+    }
+
+    .nav-heading {
+        width: 96%;
+    }
+
+    .nav-heading img {
+        width: 28.6px;
+        height: 20px;
+    }
+
+    .compose-button {
+        padding: 1em 1.4em;
+    }
+
+    .nav-items svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .main-sub-header {
+        top: 54.45px;
+    }
+
+    .hover-icons svg {
+        width: 15px;
+        height: 15px;
+    }
+ }
+
+ @media screen and (max-width: 1000px) {
+    .heading {
+        padding: 0 0 0.55em 0.7em;
+        width: 101%;
+    }
+
+    .compose-button {
+        padding: 1em 1.2em;
+    }
+
+    .search-bar {
+         position: relative;
+         left: 20px;
+    }
+
+    .mail-icons {
+        display: flex;
+        align-items: center;        
+    }
+
+    .container {
+        display: flex;
+        align-items: center;        
+    }
+
+    .date {
+        width: 4.6%;
+    }
+
+    .right-sidenav img {
+        width: 16px;
+        height: 18px;
+    }
+ }
+
+ @media screen and (max-width: 951px) {
+    .heading {
+        padding: 0 0 0.55em 0.3em;
+        width: 94%;
+    }
+
+    .nav-heading img {
+        width: 24.6px;
+        height: 16px;
+    }
+
+    .mail-title {
+        width: 51%;
+    }
+
+    .mail-title-n-icons {
+        justify-content: flex-start;
+    }
+ }
+
+ @media screen and (max-width: 932px) {
+     .gmail-icon,
+     #gmail,
+     .compose-button p {
+         display: none;
+     }
+
+     .main-sub-header,
+     .right-sidenav {
+         display: none;
+     }
+
+     .search-bar {
+         width: 75%;
+     }
+
+     .mail-section {
+         padding-left: 0;
+         top: 67px;
+     }
+
+     .mail {
+         display: block;
+         position: relative;
+     }
+
+     .mail-title-n-icons {
+         display: block;
+     }
+
+     .container {
+         display: none;
+     }
+
+     .mail-icons {
+         display: none;
+     }
+
+     .mail-body {
+         display: block;
+     }
+
+     #hyphen {
+         display: none;
+     }
+
+     .hover-icons {
+         display: none;
+     }
+
+     .date {
+         position: absolute;
+         right: 9px;
+         top: 5px;
+     }
+ }
+
+ @media screen and (max-width: 845px) {
+    .gmail-icon,
+    #gmail,
+    .compose-button p {
+        display: none;
+    }
+
+    .main-sub-header,
+    .right-sidenav {
+        display: none;
+    }
+
+    main {
+        margin-left: 5.8%;
+    }
+
+    .search-bar {
+        width: 72%;
+    }
+
+    .mail-section {
+        padding-left: 0;
+        left: 15px;
+    }
+
+    .mail {
+        display: block;
+        position: relative;
+    }
+
+    .mail-title-n-icons {
+        display: block;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .mail-icons {
+        display: none;
+    }
+
+    .mail-body {
+        display: block;
+    }
+
+    #hyphen {
+        display: none;
+    }
+
+    .hover-icons {
+        display: none;
+    }
+
+    .date {
+        position: absolute;
+        right: 9px;
+        top: 5px;
+    }
+}
+
+ @media screen and (max-width: 768px) {
+    .heading {
+        padding: 0 0 0.55em 1.5em;
+    }
+    
+    .nav-menu a,
+    .nav-items-num p {
+         display: none;
+    }
+
+    .nav {
+        width: 67.3%;
+    }
+
+    .compose-button {
+        padding: 1em 0.7em;
+    }
+
+    .compose-button img {
+        position: relative;
+        left: 6px;
+    }
+ }
+
+ @media screen and (max-width: 565px) {
+     .nav-menu h4 {
+         padding: 1em 0.4em 0.3em 0.7em;
+         text-align: center;
+     }
+ }
+
+ @media screen and (max-width: 480px) {
+    .searchbar-buttons, 
+    .header-right,
+     .compose-button,
+     .nav-menu,
+     .main-sub-header,
+     .right-sidenav,
+     .hover-icons {
+         display: none;
+     }
+
+     aside {
+         height: 0%;
+         overflow: visible;
+         position: relative;
+     }
+
+     .heading {
+        position: absolute;
+        width: 90%;
+    }
+
+     .nav-heading {
+         z-index: 65;
+     }
+
+     .main-header {
+         position: static;
+     }
+
+     .search-bar {
+        padding: 1em 3em;
+        width: 95%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        background-color: #ffff;
+        border: 1px solid rgba(141, 137, 137, 0.11);
+        box-shadow: 0px 2px 2px rgb(141 137 137 / 48%);
+    }
+
+    .mail-section {
+        position: absolute;
+        top: 69px;
+        left: 1px;
+        z-index: 60;
+        width: 98%;
+        padding-left: 1.3em;
+    }
+
+    .mail {
+        border-bottom: none;
+    }
+
+    #open {
+        background-color: #ffff;
+    }
+
+    .mail:hover {
+        background-color: #ccc;
+        border: none;
+        box-shadow: none;
+    }
+
+    .mail:hover > .date {
+        opacity: 1;
+    }
+ }
